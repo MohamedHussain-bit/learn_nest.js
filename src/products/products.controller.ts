@@ -13,7 +13,7 @@ export class ProductController {
     { id: 2, name: 'Product 2', price: 19.99 },
     { id: 3, name: 'Product 3', price: 5.99 },
   ];
-  // GET  http://localhost:5000/api/v1/products
+  // POST  http://localhost:5000/api/v1/products
   @Post('/api/v1/products')
   public createProduct(@Body() body: any) {
     console.log(body);
